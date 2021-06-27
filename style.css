@@ -1,6 +1,9 @@
+/* For phones */
+
 body{
-    background-color: #161d20;
+    background-image: linear-gradient(to right,#0B0C10, #1F2833);
     padding: 5px 5px 5px 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .img-logo1{
@@ -12,9 +15,16 @@ body{
     margin-top: 10px;
 }
 
+.img-logo-menu{
+    height: 50px;
+    margin-top: 0px;
+    margin-left:-10px;
+}
+
+
 .name{
     height: 100px;
-    color: white;
+    color: #c5c6c7;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 6px;
     font-size: 6px;
@@ -28,48 +38,177 @@ body{
 .centered-buttons{
     color:white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .button1{
+    color: white;
     margin-top: -80px;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .button2{
-    font-size: 14px;
+    color: white;
+    font-size: 10px;
     margin-top: -10px;
 }
 
 .button3{
-    font-size: 14px;
+    color: white;
+    font-size: 10px;
     margin-top: -10px;
 }
 
 .button4{
-    font-size: 14px;
+    color: white;
+    font-size: 10px;
     margin-top: -10px;
 }
 
 .non-centered-buttons{
-    display:none
+    display: none;
 }
+
+.img-logo2{
+    display: none;
+}
+
+.non-centered-buttons-1{
+    display: none;
+}
+
+#welcomeNote{
+    color: #c5c6c7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #45a29e;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #45a29e;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 25px;
+    margin-left: 40px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  #buttonNav{
+      font-size: 30px;
+  }
+
+  .facebook{
+      height: 20px;
+      position: fixed;
+      margin-left: 313px;
+      margin-top: 7px;
+  }
+
+  .youtube{
+    height: 20px;
+    position: fixed;
+    margin-left: 313px;
+    margin-top: 30px;
+}
+
+.insta{
+    height: 20px;
+    position: fixed;
+    margin-left: 313px;
+    margin-top: 53px;
+}
+
+
+
+/* For iPad 768 x 1024 */
 
 @media only screen and (min-width: 768px){
 
     .img-logo{
-        height: 80px;
-        margin-top: 10px;
+        height: 100px;
+     }
+    
+    .button1{
+        margin-top: -70px;
+        font-size: 14px;
+    }
+    
+    .button2{
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    
+    .button3{
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    
+    .button4{
+        font-size: 14px;
+        margin-top: -10px;
     }
 
-    .name1{
-        height: 100px;
-        color: white;
+    .centered-buttons{
+        display: none;
+    }
+
+    .name{
+        font-size: 15px;
+    }
+
+    .non-centered-buttons{
+        color:white;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        letter-spacing: 8px;
-        font-size: 12px;
+        margin-left: 40px;
         display: block;
-        margin-left: 105px;
-        margin-top: -70px;
+    }
+
+    .non-centered-buttons-1{
+        display: none;
+    }
+
+    #buttonNav{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
+    .img-logo{
+       height: 100px;
     }
     
     .button1{
@@ -96,24 +235,24 @@ body{
         display: none;
     }
 
-    .img-logo1{
-        display: block;
-        height: 100px;
-        padding: 10px 10px 10px 10px;
-    }
-
-    .img-logo{
-        display: none;
-    }
-
     .name{
-        display: none;
+        font-size: 15px;
     }
 
     .non-centered-buttons{
+        display: none;
+    }
+
+    .non-centered-buttons-1{
         color:white;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         display: block;
+        margin-left: 1100px;
+
+    }
+
+    #buttonNav{
+        font-size: 50px;
     }
 
 }

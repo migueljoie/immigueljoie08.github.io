@@ -2,36 +2,80 @@
 <head>
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="altLogo.png"/>
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
 
 </head>
-<body>
+<body id="container">
 
-    <center><a><img class="img-logo" src="favicon.png" alt="Miguel Joie's Webpage Logo"></a></center>
-    <a><img class="img-logo1" src="favicon.png" alt="Miguel Joie's Webpage Logo"></a>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <center><a href="index.html"><img class="img-logo-menu" src="altLogo_1.png" alt="Miguel Joie's Webpage Logo"></a></center>
+        <a href="index.html">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Announcements</a>
+        <a href="#">More</a>
+
+        <p style="color: white; padding: 5px 32px 5px 32px; font-size: 10px; text-align: justify;">I am Miguel Joie S. Polines. I am an aspiring educator, web developer and a skilled photographer and video editor. I have lots and lots of dreams, and I want to make the most of it. Today, I am making this website to compile everything of my accomplishments, from my teenage days up to my adulthood. I am glad that you are here, visiting my website! This is my first ever website and I'm glad that you're here!<br><br>Made by Miguel Joie S. Polines<br>Copyright 2021</p>
+      </div>
+
+      <span id="buttonNav" style="cursor:pointer;color: #66fcf1; position: fixed;" onclick="openNav()">&#9776;</span>
+
+      <a href="http://www.facebook.com/Immigueljoie08"><img class="facebook" src="images/Facebook-logo.png"</a>
+      <a href="http://www.facebook.com/Immigueljoie08"><img class="youtube" src="images/youtube.png"</a>
+      <a href="http://www.facebook.com/Immigueljoie08"><img class="insta" src="images/ig.png"</a>
+
+ <div>
+    <center><a><img class="img-logo" src="altLogo.png" alt="Miguel Joie's Webpage Logo"></a></center>
+
+    <a href="index.html"><img class="img-logo1" src="altLogo.png" alt="Miguel Joie's Webpage Logo"></a>
+
+    <a href="index.html"><img class="img-logo2" src="altLogo.png" alt="Miguel Joie's Webpage Logo"></a>
+
     <center><p class="name">MIGUEL<br>JOIE</p></center>
     <p class="name1">MIGUEL<br>JOIE</p>
 
-    <center class="centered-buttons">
-    <a style="text-decoration: none;"><p class="button1">HOME</p></a>
-    <a style="text-decoration: none;"><p class="button2">PROJECTS</p></a>
-    <a style="text-decoration: none;"><p class="button3">ANNOUNCEMENTS</p></a
-    <a style="text-decoration: none;"><p class="button4">MORE</p></a>
-    </center>
+<!-- Hehe
     
     <div class="non-centered-buttons">
-        <a style="text-decoration: none;"><p class="buttonA">HOME</p></a>
-        <a style="text-decoration: none;"><p class="buttonB">PROJECTS</p></a>
-        <a style="text-decoration: none;"><p class="buttonC">ANNOUNCEMENTS</p></a>
-        <a style="text-decoration: none;"><p class="buttonD">MORE</p></a>
+        <a href="index.html" style="text-decoration: none; color: white" ><p style="margin-left: 290px; margin-top: -105px;">HOME</p></a>
+
+        <a href="migueljoieProjects.html" style="text-decoration: none; color: white"><p style="margin-left: 360px; margin-top: -37px;">PROJECTS</p></a>
+
+        <a href="migueljoieAnnouncements.html" style="text-decoration: none; color: white"><p style="margin-left: 460px; margin-top: -37px;">ANNOUNCEMENTS</p></a>
+
+        <a href="more.html" style="text-decoration: none; color: white"><p style="margin-left: 630px; margin-top: -37px;">MORE</p></a>
         </div>
 
+        <div class="non-centered-buttons-1">
+            <a href="index.html" style="text-decoration: none; color: white" ><p style="margin-left: 290px; margin-top: -105px;">HOME</p></a>
+    
+            <a href="migueljoieProjects.html" style="text-decoration: none; color: white"><p style="margin-left: 360px; margin-top: -37px;">PROJECTS</p></a>
+    
+            <a href="migueljoieAnnouncements.html" style="text-decoration: none; color: white"><p style="margin-left: 460px; margin-top: -37px;">ANNOUNCEMENTS</p></a>
+    
+            <a href="more.html" style="text-decoration: none; color: white"><p style="margin-left: 630px; margin-top: -37px;">MORE</p></a>
+            </div>
+
+            -->
+</div>
+
+<div>
+<center><p id="welcomeNote">WELCOME!</p></center>
+
+
+</div>
 
 </body>
 
-<footer>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-</footer>
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
 </html>
