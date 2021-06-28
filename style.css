@@ -162,7 +162,7 @@ body {
 }
 
 #welcomeNote1{
-    font-size: 10px;
+    font-size: 15px;
     margin-top: -50px;
     color: white;
     padding-left: 10px;
@@ -170,7 +170,7 @@ body {
 }
 
 #welcomeNote2{
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 10px;
     color: white;
     padding-left: 10px;
@@ -186,7 +186,7 @@ body {
     border: 1px solid #66fcf1;
     color: white;
     padding: 7px 7px;
-    font-size: 8px;
+    font-size: 12px;
     cursor: pointer;
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -198,6 +198,27 @@ body {
     background: white;
     color: black;
     transition: .5s;
+  }
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    margin-left: 50vw;
+    transform: translate(-55%);
   }
 
 /* For iPad 768 x 1024 */
@@ -290,6 +311,14 @@ body {
     padding-right: 30px;
 }
 
+#welcomeNote2{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .info {
     border-color: #2196F3;
     color: dodgerblue;
@@ -313,6 +342,25 @@ body {
     transition: .5s;
   }
 
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+
+  }
+
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 60%;
+    margin-left: 50vw;
+    transform: translate(-52%);
+  }
 
 }
 
@@ -373,21 +421,21 @@ body {
     .facebook{
         height: 50px;
         position: fixed;
-        margin-left: 1690px;
+        margin-left: 1670px;
         margin-top: 15px;
     }
   
     .youtube{
       height: 50px;
       position: fixed;
-      margin-left: 1760px;
+      margin-left: 1740px;
       margin-top: 15px;
   }
   
   .insta{
       height: 50px;
       position: fixed;
-      margin-left: 1830px;
+      margin-left: 1810px;
       margin-top: 15px;
   }
 
@@ -403,6 +451,14 @@ body {
     color: white;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+#welcomeNote2{
+    font-size: 30px;
+    margin-top: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .info {
@@ -431,4 +487,24 @@ body {
   .vid1{
     height: 1000px;
 }
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; 
+
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 40%;
+    margin-left: 50vw;
+    transform: translate(-52%);
+  }
 }
