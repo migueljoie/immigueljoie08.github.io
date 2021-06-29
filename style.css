@@ -110,7 +110,14 @@ body {
   }
   
   .sidenav a:hover {
-    color: #45a29e;
+    color: #000000;
+    transform: translateX(10px);
+    font-size: 20px;
+    transition: 0.7s;
+  }
+
+  .sidenav a:active{
+    color: #000000;
   }
   
   .sidenav .closebtn {
@@ -120,6 +127,13 @@ body {
     font-size: 25px;
     margin-left: 40px;
   }
+
+  .sidenav .closebtn:hover {
+    transform: translateX(0px);
+    font-size: 40px;
+  }
+
+
 
 
   
@@ -206,7 +220,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; 
+    padding-top: 50.25%; 
 
   }
   
@@ -219,12 +233,58 @@ body {
     width: 80%;
     height: 80%;
     margin-left: 50vw;
-    transform: translate(-55%);
+    transform: translate(-54.5%);
   }
 
   #note{
     font-size: 12px;
 }
+
+.backToTop{
+    color: white;
+    text-decoration: none;
+}
+
+em::before {
+    content: "WELCOME!";
+    animation: animate infinite;
+    font-style: normal;
+    animation-delay: 2s;
+    animation-duration: 25s;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "WELCOME!";
+    }
+
+    25%{
+        content: "KUMUSTA!";
+        background: -webkit-linear-gradient(rgb(0, 131, 238), rgb(250, 37, 37));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    60% {
+        content: "こんにちは!";
+        color: red;
+    }
+
+    80% {
+        content: "안녕하세요!";
+        color: rgb(230, 52, 230);
+
+    }
+
+    100% {
+        content: "WELCOME!";
+        color: #66fcf1
+
+    }
+
+}
+
 
 
 /* For iPad 768 x 1024 */
