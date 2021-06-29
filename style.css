@@ -175,6 +175,7 @@ body {
     font-size: 50px;
     margin-top: -80px;
     color: #66fcf1;
+    margin-bottom: 65px;
 }
 
 #welcomeNote1{
@@ -240,10 +241,6 @@ body {
     font-size: 12px;
 }
 
-.backToTop{
-    color: white;
-    text-decoration: none;
-}
 
 em::before {
     content: "WELCOME!";
@@ -279,11 +276,33 @@ em::before {
 
     100% {
         content: "WELCOME!";
-        color: #66fcf1
+        color: #66fcf1;
 
     }
 
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 2px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    border-radius: 4px;
+  }
+
+  .imgButton{
+    height: 8vw;
+}
+
 
 
 
@@ -376,6 +395,7 @@ em::before {
     font-size: 70px;
     margin-top: -80px;
     color: #66fcf1;
+    margin-bottom: 70px;
 }
 
 #welcomeNote1{
@@ -440,7 +460,29 @@ em::before {
   #note{
     font-size: 14px;
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 2px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    border-radius: 4px;
+  }
+
+  .imgButton{
+    height: 6vw;
 }
+}
+
 
 @media only screen and (min-width: 1000px){
 
@@ -499,21 +541,21 @@ em::before {
     .facebook{
         height: 50px;
         position: absolute;
-        margin-left: 1670px;
+        margin-left: 87vw;
         margin-top: 15px;
     }
   
     .youtube{
       height: 50px;
       position: absolute;
-      margin-left: 1740px;
+      margin-left: 90.6vw;
       margin-top: 15px;
   }
   
   .insta{
       height: 50px;
       position: absolute;
-      margin-left: 1810px;
+      margin-left: 94.2vw;
       margin-top: 15px;
   }
 
@@ -521,6 +563,7 @@ em::before {
     font-size: 90px;
     margin-top: -80px;
     color: #66fcf1;
+    margin-bottom: 100px;
 }
 
 #welcomeNote1{
@@ -589,4 +632,26 @@ em::before {
   #note{
       font-size: 15px;
   }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 2px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    border-radius: 4px;
+  }
+
+  .imgButton{
+    height: 3vw;
+}
+
 }

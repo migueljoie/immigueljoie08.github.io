@@ -11,8 +11,10 @@
   <a id="top"></a>
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
         <center><a href="index.html"><img class="img-logo-menu" src="altLogo_1.png" alt="Miguel Joie's Webpage Logo"></a></center>
+
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="announcements.html">Announcements</a>
@@ -21,7 +23,7 @@
         <p id="note" style="color: white; padding: 5px 32px 5px 32px; text-align: justify;">I am Miguel Joie S. Polines. I am an aspiring educator, web developer and a skilled photographer and video editor. I have lots and lots of dreams, and I want to achieve most of it. Today, I am making this website to put together, compile those accomplishments I have and will have, from my teenage days up to my adulthood. I am glad that you are here, visiting my website! This is my first ever website and I'm glad that you're here!<br><br>Made by Miguel Joie S. Polines<br>Copyright 2021</p>
       </div>
 
-      <span id="buttonNav" style="cursor:pointer;color: #66fcf1; position: fixed;" onclick="openNav()">&#9776;</span>
+      <span title="Menu" id="buttonNav" style="cursor:pointer;color: #66fcf1; position: fixed;" onclick="openNav()">&#9776;</span>
 
       <div class="socmed">
 
@@ -32,7 +34,7 @@
       </div>
 
  <div>
-    <center><a><img class="img-logo" src="altLogo.png" alt="Miguel Joie's Webpage Logo"></a></center>
+    <center><a href="index.html"><img class="img-logo" src="altLogo.png" alt="Miguel Joie's Webpage Logo"></a></center>
 
     <a href="index.html"><img class="img-logo1" src="altLogo.png" alt="Miguel Joie's Webpage Logo"></a>
 
@@ -56,13 +58,16 @@
 
     <iframe class="responsive-iframe" src="https://www.youtube.com/embed/lOs3Y8PdlVg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+
   </div>
 
 </div>
 
-<!--
-<a href="#top" class="backToTop">Back to top</a>
--->
+<p style="color: white;">adasdsadsadsdasdsd<br>adasdasdasdasd<br>dadasdsadas<br>adasdsadsadsdasdsd<br>adasdasdasdasd<br>dadasdsadas<br>adasdsadsadsdasdsd<br>adasdasdasdasd<br>dadasdsadas<br>adasdsadsadsdasdsd<br>adasdasdasdasd<br>dadasdsadas<br>adasdsadsadsdasdsd<br>adasdasdasdasd<br>dadasdsadas<br>adasdsadsadsdasdsd<br>adasdasdasdasd<br>dadasdsadas<br>adasdsadsadsdasdsd<br>adasdasdasdasd<br>dadasdsadas<br>adasdsadsadsdasdsd<br>adasdasdasdasd<br>dadasdsadas<br>adasdsadsadsdasdsd<br>adasdasdasdasd<br>dadasdsadas<br>adasdsadsadsdasdsd<br>adasdasdasdasd<br>dadasdsadas<br></p>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/arrow-up.png" class="imgButton"></button>
 
 
 </body>
@@ -74,6 +79,26 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+}
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
 
